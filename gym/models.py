@@ -1,10 +1,10 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User  #to manage your account
 
 # Create your models here.
 
 class Contact(models.Model):
-    name = models.CharField(max_length=100, null=True)
+    name = models.CharField(max_length=100, null=True) #null the value can be null
     emailid = models.CharField(max_length=50, null=True)
     contact = models.CharField(max_length=15, null=True)
     subject = models.CharField(max_length=100, null=True)
@@ -21,7 +21,7 @@ class Enquiry(models.Model):
     age = models.CharField(max_length=15, null=True)
     gender = models.CharField(max_length=10, null=True)
 
-    def __str__(self):
+    def __str__(self):  #makes your model readable and meaningful
         return self.name
 
 

@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User  #to manage your account
-
+ 
 # Create your models here.
 
 class Contact(models.Model):
